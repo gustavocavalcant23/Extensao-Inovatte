@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição Realizada - Inovatte Consultoria</title>
+    <link rel="stylesheet" href="{% static 'css/register_confirmation.css' %}">
+</head>
+<body>
+    <div class="confirmation-container">
+        <div class="logo">Inovatte Consultoria</div>
+        
+        <div class="confirmation-icon">📧</div>
+        
+        <h1 class="confirmation-title">Inscrição Confirmada!</h1>
+        
+        <p class="confirmation-message">
+            Bem-vindo(a) à nossa comunidade! Sua inscrição na newsletter foi realizada com sucesso.
+            <br><br>
+            Agora você receberá em primeira mão:
+        </p>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">🎯</div>
+                <h3>Insights Exclusivos</h3>
+                <p>Conteúdo técnico avançado sobre Agronegócio, Gestão e SST</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">📊</div>
+                <h3>Análises de Mercado</h3>
+                <p>Tendências e oportunidades para seu negócio crescer</p>
+            </div>
+            
+            <div class="benefit-card">
+                <div class="benefit-icon">💼</div>
+                <h3>Ferramentas Práticas</h3>
+                <p>Modelos e checklists para implementar rapidamente</p>
+            </div>
+        </div>
+        
+        <div class="countdown-container">
+            <p class="countdown-text">Redirecionando para página inicial em</p>
+            <div class="countdown-number" id="countdown">30</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <p class="confirmation-note">
+            Fique atento ao seu email para não perder nossos conteúdos!
+        </p>
+        
+        <a href="{% url 'home' %}" class="btn">
+            Voltar para Home
+        </a>
+    </div>
+
+    <script src="{% static 'js/register_confirmation.js' %}"></script>
+</body>
+</html>

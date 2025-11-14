@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Enviada - Inovatte Consultoria</title>
+    <link rel="stylesheet" href="{% static 'css/confirmation.css' %}">
+</head>
+<body>
+
+    <div class="confirmation-container">
+        <div class="logo">Inovatte Consultoria</div>
+        
+        <div class="confirmation-icon">✓</div>
+        
+        <h1 class="confirmation-title">Mensagem Enviada!</h1>
+        
+        <p class="confirmation-message">
+            Sua mensagem foi recebida com sucesso. Nossa equipe entrará em contato 
+            em breve. Obrigado por escolher a Inovatte Consultoria.
+        </p>
+        
+        <div class="countdown-container">
+            <p class="countdown-text">Redirecionando para página inicial em</p>
+            <div class="countdown-number" id="countdown">10</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        
+        <a href="{% url 'home' %}" class="btn">
+            Voltar Agora
+        </a>
+    </div>
+
+    <script src="{% static 'js/confirmation.js' %}"></script>
+</body>
+</html>

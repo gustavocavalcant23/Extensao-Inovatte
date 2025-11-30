@@ -120,7 +120,7 @@ Altere o arquivo `.env` (ou configure conforme sua preferência) com chaves mín
 python manage.py migrate
 ```
 
-6. **Criar superusuário (opcional, para acessar o admin)**
+6. **Criar superusuário**
 
 ```bash
 python manage.py createsuperuser
@@ -136,12 +136,6 @@ python manage.py collectstatic --noinput
 
 ```bash
 python manage.py runserver
-```
-
-9. **Criar um superuser**
-
-```bash
-python manage.py createsuperuser
 ```
 
 Acesse: `http://127.0.0.1:8000/` para a área pública e `http://127.0.0.1:8000/admin/` para o painel administrativo.

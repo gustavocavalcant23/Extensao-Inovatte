@@ -2,6 +2,8 @@
 
 Projeto desenvolvido como atividade de extensão utilizando **Django** para construção de um site institucional moderno, funcional e focado na **captação de leads** e comunicação com clientes.
 
+Site disponível em: https://inovatte-consultoria.onrender.com/
+
 ---
 
 ## 🚀 Sobre o Projeto
